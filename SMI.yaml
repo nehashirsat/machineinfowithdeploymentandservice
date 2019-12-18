@@ -1,0 +1,11 @@
+apiVersion: split.smi-spec.io/v1alpha1
+kind: TrafficSplit
+metadata:
+  name: service-rollout
+spec:
+  service: machineinfo-service
+  backends:
+  - service: machineinfo-service-v1
+    weight: 500m
+  - service: machineinfo-service-v2
+    weight: 500m
