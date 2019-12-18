@@ -4,7 +4,6 @@ metadata:
   name: machineinfo-deploymentv1
   labels:
     app: machineinfo-app
-    version: v1
 spec:
   replicas: 1
   selector:
@@ -14,7 +13,6 @@ spec:
     metadata:
       labels:
         app: machineinfo-app
-        version: v1
     spec:
       containers:
         - name: machineinfo-container
