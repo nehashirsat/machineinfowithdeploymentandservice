@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: machineinfo-deployment
+  name: machineinfo-deploymentv1
   labels:
     app: machineinfo-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: machineinfo-app
