@@ -13,7 +13,7 @@ spec:
   template:
     metadata:
       labels:
-        app: machineinfo-app
+        app: machineinfo-app2
         version: v2
     spec:
       containers:
