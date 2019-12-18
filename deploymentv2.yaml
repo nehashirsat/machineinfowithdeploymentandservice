@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: machineinfo-deploymentv2
+  labels:
+    app: machineinfo-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: machineinfo-app
+  template:
+    metadata:
+      labels:
+        app: machineinfo-app
+    spec:
+      containers:
+        - name: machineinfo-container
+          image: nehashirsat/machineinfopink:v1.1.1
+          ports:
+            - containerPort: 9000
