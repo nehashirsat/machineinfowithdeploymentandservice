@@ -4,7 +4,7 @@ metadata:
   name: machineinfo-service-v2
 spec:
   selector:
-    app: machineinfo-app2
+    app: machineinfo-app
   ports:
   - protocol: TCP
     port: 9000
