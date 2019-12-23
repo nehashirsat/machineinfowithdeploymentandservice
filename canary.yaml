@@ -11,10 +11,10 @@ spec:
   service:
     port: 9000
   canaryAnalysis:
-    interval: 10s
-    threshold: 5
+    interval: 1s
+    threshold: 1
     stepWeight: 10
     metrics:
     - name: request-success-rate
-      threshold: 99
-      interval: 1m
+      threshold: 10
+      interval: 1s
