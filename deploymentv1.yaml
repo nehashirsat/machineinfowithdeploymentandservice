@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: machineinfo-deploymentv1
+  namespace: machineinfo
   labels:
     app: machineinfo-app
 spec:
@@ -11,6 +12,8 @@ spec:
       app: machineinfo-app
   template:
     metadata:
+      annotations:
+        linkerd.io/inject: enabled      
       labels:
         app: machineinfo-app
     spec:
