@@ -9,7 +9,7 @@ spec:
     kind: Deployment
     name: machineinfo-app
   service:
-    port: 9898
+    port: 9000
   canaryAnalysis:
     interval: 10s
     threshold: 5
