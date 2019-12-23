@@ -1,7 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: machineinfo-service
+  name: machineinfo-app
+  namespace: machineinfo
   labels:
     app: machineinfo-app
 spec:
