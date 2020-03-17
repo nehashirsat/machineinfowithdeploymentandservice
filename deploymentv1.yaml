@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: machineinfo-app
-  namespace: machineinfo
+  namespace: dev
   labels:
     app: machineinfo-app
 spec:
