@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: machineinfo-deploymentv2
   labels:
-    app: machineinfo-app
+    app: machineinfo-app2
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: machineinfo-app
+      app: machineinfo-app2
   template:
     metadata:
       labels:
-        app: machineinfo-app
+        app: machineinfo-app2
     spec:
       containers:
         - name: machineinfo-container2
